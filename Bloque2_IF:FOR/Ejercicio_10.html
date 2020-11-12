@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Ejercicio 10</title>
+	</head>
+	<body>
+		<script>
+			const sueldo = [];
+			let sueldoTotal = 0;
+			let sueldosDe100A300 = 0;
+			let sueldosDesde300 = 0;
+
+			for (let i = 0; i < 5; i++) {
+				sueldo[i] = parseInt(
+					prompt(`Ingrese el sueldo numero ${i + 1}`)
+				);
+				sueldoTotal += sueldo[i];
+
+				if (sueldo[i] >= 100 && sueldo[i] <= 300) {
+					sueldosDe100A300++;
+				} else {
+					sueldosDesde300++;
+				}
+			}
+
+			document.write(
+				`Existe/n ${sueldosDe100A300} sueldo/s entre $ 100 y $ 300 <br>`
+			);
+			document.write(
+				`Existe/n ${sueldosDesde300} sueldo/s mayor a $300 <br>`
+			);
+
+			document.write(
+				`La empresa gasta en sueldos un total a ${sueldoTotal}`
+			);
+		</script>
+	</body>
+</html>

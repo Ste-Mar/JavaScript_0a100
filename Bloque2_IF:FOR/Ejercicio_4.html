@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Ejercicio 4</title>
+	</head>
+	<body>
+		<script>
+			const producto = prompt(
+				"Buen día, ingrese el nombre del producto"
+			);
+			const cantidad = parseInt(
+				prompt("Cantidad de productos a comprar")
+			);
+			const precio = parseInt(prompt("Y precio del producto"));
+
+			document.write(
+				`Muchas gracias por comprar 😘, usted adquirió ${cantidad} unidades de ${producto}. 
+                El total a abonar es igual a ${precio * cantidad} `
+			);
+		</script>
+	</body>
+</html>

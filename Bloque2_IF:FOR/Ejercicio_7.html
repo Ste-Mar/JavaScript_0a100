@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Ejercicio 7</title>
+	</head>
+	<body>
+		<script>
+			const numeros = [];
+			let acumulador = 0;
+
+			for (let i = 0; i < 4; i++) {
+				numeros[i] = parseInt(prompt(`Ingrese el número ${i + 1}`));
+				if (numeros[i] < 23) {
+					acumulador++;
+				}
+			}
+
+			if (acumulador === 4) {
+				document.write(
+					"Todos los números son menores al establecido"
+				);
+			} else {
+				document.write("No se cumple que todos sean menores a 23");
+			}
+		</script>
+	</body>
+</html>

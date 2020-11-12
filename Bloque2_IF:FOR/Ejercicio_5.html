@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Ejercicio 5</title>
+	</head>
+	<body>
+		<script>
+			const notas = [];
+
+			notas[0] = parseInt(prompt("Ingrese la primer nota"));
+			notas[1] = parseInt(prompt("Ingrese la segunda nota"));
+
+			const suma = notas[0] + notas[1];
+			const promedio = suma / 2;
+			let maxima = notas[0];
+
+			if (notas[1] > maxima) {
+				maxima = notas[1];
+			}
+
+			document.write(`La suma de las notas es igual a ${suma} <br>`);
+			document.write(
+				`El promedio de las notas es igual a  ${promedio} <br>`
+			);
+			document.write(`La nota máxima es ${maxima} <br>`);
+		</script>
+	</body>
+</html>
