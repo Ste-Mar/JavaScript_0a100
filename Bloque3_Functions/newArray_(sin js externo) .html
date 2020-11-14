@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			const cantidadDeValores = [];
+
+			const arraysEntregados = parseInt(
+				prompt("Cuantos arrays ingresara?")
+			);
+
+			for (let i = 0; i < arraysEntregados; i++) {
+				cantidadDeValores.push(
+					parseInt(
+						prompt(`Cuantos valores tiene el array ${i + 1}`)
+					)
+				);
+			}
+
+			const valores = [];
+
+			for (let i = 0; i < arraysEntregados; i++) {
+				for (let j = 0; j < cantidadDeValores[i]; j++) {
+					valores.push(
+						prompt(
+							`Ingrese el valor ${j + 1} del array ${
+								i + 1
+							}`
+						)
+					);
+				}
+			}
+
+			document.write(valores);
+		</script>
+	</body>
+</html>

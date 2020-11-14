@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<script src="Ejercicio_3.js"></script>
+	</head>
+	<body>
+		<script>
+			numeros = [];
+			const numerosEntregados = parseInt(
+				prompt("Cuantos números ingresara?")
+			);
+
+			for (let i = 0; i < numerosEntregados; i++) {
+				numeros.push(
+					parseInt(prompt(`Ingrese el número ${i + 1}`))
+				);
+			}
+
+			const suma = sumaDeNumeros(numeros);
+			document.write(`La suma total es ${suma}<br>`);
+		</script>
+	</body>
+</html>
